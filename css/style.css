@@ -263,6 +263,7 @@ html {
 .feature-body-image {
     margin-left: 80px;
     width: calc(345 / 315 * 100%);
+    max-width: 315px;
 }
 
 .feature-body-image img {
@@ -277,6 +278,7 @@ html {
 
 .feature-body-column {
     padding: 61px 0 0 13px;
+    max-width: 240px;
 }
 
 .feature-body-column-2 {
@@ -355,7 +357,7 @@ html {
     color: #fcdb00;
 }
 
-.footer-list-wrapper{
+.footer-list-wrapper {
     display: flex;
 }
 
@@ -515,7 +517,7 @@ html {
 }
 
 @media screen  and (max-width: 375px) {
-    .header-burger{
+    .header-burger {
         margin: 50px 0 10px 10px;
     }
 
