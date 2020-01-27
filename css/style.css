@@ -140,6 +140,10 @@ html {
     height: 43px;
 }
 
+.header-logo a{
+    display: block;
+}
+
 .header-logo a img {
     display: block;
     width: 100%;
@@ -169,6 +173,16 @@ html {
     transform: scale(1.2);
 }
 
+.swiper-container{
+    height: 80vh;
+    z-index: 0;
+}
+
+.top-slider__pagination .swiper-pagination-bullet-active{
+    background-color: white;
+}
+
+
 /* Main */
 .main {
     height: calc(100vh - 100px);
@@ -177,7 +191,7 @@ html {
 }
 
 .main-wrapper {
-    padding-top: 213px;
+    padding: 210px 0 100px;
     text-align: center;
 }
 
@@ -202,6 +216,11 @@ html {
 .main-item-list {
     display: flex;
     justify-content: center;
+}
+
+.main-item-list a{
+    display: block;
+    width: 100%;
 }
 
 .main-item-list li {
@@ -308,9 +327,15 @@ html {
     margin-bottom: 111px;
 }
 
+.input-wrapper{
+    width: 100%;
+    max-width: 580px;
+}
+
 .input-wrapper input {
     margin-left: 3px;
     padding: 17px 366px 15px 20px;
+    width: 100%;
     border: 0;
     border-radius: 10px;
 }
@@ -458,6 +483,7 @@ html {
 
     .feature-body-column {
         padding: 0;
+        display: contents;
     }
 
     .feature-body-column-2 {
@@ -478,41 +504,46 @@ html {
     }
 
     .form-inner {
-        flex-direction: column;
         margin-bottom: 20px;
     }
 
-    .input-wrapper input {
-        margin-bottom: 15px;
-        margin-left: 0;
-        padding: 17px 0 15px 10px;
+    .input-wrapper {
         width: 100%;
+        max-width: 580px;
     }
 
-    .def_btn {
-        padding: 15px 35px;
-        margin: 0 auto;
-        width: 30%;
+    .input-wrapper input {
+        margin-left: 0;
+        padding: 17px 0 15px 10px;
+        width: 100%
     }
 
     .footer-wrapper {
         flex-direction: column;
-        margin-bottom: 100px;
+        margin-bottom: 0;
     }
 
     .footer-info-list {
-        margin: 0 0 20px;
+        margin: 0 auto 20px;
+        text-align: center;
     }
 
     .footer-list-wrapper {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
     }
 
     .footer-list {
         margin-bottom: 20px;
+        margin-right: 0;
     }
 
+    .footer-list li {
+        min-width: 200px;
+        padding: 10px 0;
+    }
 
 }
 
@@ -540,8 +571,17 @@ html {
     }
 
     .feature-body-image {
-        margin: 0 5px 20px;
+        margin-bottom: 20px;
         max-width: 300px;
+    }
+
+    .form-inner {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .input-wrapper input {
+        margin-bottom: 20px;
     }
 
     .def_btn {

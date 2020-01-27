@@ -24,3 +24,10 @@ function openNav() {
         });
     }
 }
+
+var swiper = new Swiper('.swiper-container', {
+    pagination: {
+        el: '.top-slider__pagination',
+        clickable: true,
+    },
+});
